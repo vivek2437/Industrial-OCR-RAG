@@ -4,9 +4,7 @@ import cv2
 from tqdm import tqdm
 import easyocr
 
-# -----------------------------
 # Paths
-# -----------------------------
 dataset_root = r"C:\Users\ASUS\OneDrive\Desktop\industrial-ocr-rag\data\archive\dataset"
 output_root = r"C:\Users\ASUS\OneDrive\Desktop\industrial-ocr-rag\data\extracted_text"
 
@@ -21,9 +19,7 @@ image_extensions = [".png", ".jpg", ".jpeg", ".tiff", ".bmp"]
 # -----------------------------
 reader = easyocr.Reader(['en'], gpu=True)
 
-# -----------------------------
 # OCR function
-# -----------------------------
 def ocr_image(image_path):
     img = cv2.imread(str(image_path))
     if img is None:
@@ -41,9 +37,7 @@ def ocr_image(image_path):
 
     return extracted_text
 
-# -----------------------------
 # Loop through folders and images
-# -----------------------------
 for folder in tqdm(os.listdir(dataset_root), desc="Processing folders"):
     folder_path = Path(dataset_root) / folder
     if not folder_path.is_dir():
