@@ -1,0 +1,22 @@
+# Core utilities
+python-dotenv
+tqdm
+
+# OCR and image processing
+easyocr
+Pillow
+opencv-python
+pdf2image
+
+# NLP and embeddings
+sentence-transformers
+
+# Vector database
+faiss-cpu
+
+# Ollama client
+ollama
+
+# Data handling
+numpy
+pandas
