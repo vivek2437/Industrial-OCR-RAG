@@ -41,7 +41,7 @@ Scanned Images\
 ↓\
 Image Preprocessing\
 ↓\
-OCR (Tesseract)\
+OCR (EasyOCR)\
 ↓\
 Text Chunking\
 ↓\
